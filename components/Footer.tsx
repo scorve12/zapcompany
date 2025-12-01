@@ -7,15 +7,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* 회사 정보 */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold text-white mb-4">WOOCI</h3>
+            <h3 className="text-xl font-bold text-white mb-4">ZapCompany</h3>
             <p className="text-sm text-zinc-400 mb-4">
               믿을 수 있는 도소매 파트너
             </p>
             <div className="space-y-2 text-sm">
-              <p>대표: 홍길동</p>
-              <p>사업자등록번호: 000-00-00000</p>
-              <p>주소: 서울특별시 강남구 테헤란로 123</p>
-              <p>이메일: contact@wooci.com</p>
+              <p>대표: 안재빈</p>
+              <p>사업자등록번호: 349-09-03472</p>
+              <p>주소: 광주광역시 동구 지산로57번길 5-4, 201호(지산동)</p>
+              <p>이메일: whyda122416@gmail.com</p>
               <p>전화: 02-1234-5678</p>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-zinc-800 text-sm text-zinc-500">
-          <p>&copy; {new Date().getFullYear()} WOOCI. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ZapCompany. All rights reserved.</p>
         </div>
       </div>
     </footer>

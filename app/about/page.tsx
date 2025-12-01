@@ -31,12 +31,12 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
                   믿을 수 있는 파트너,
                   <br />
-                  WOOCI
+                  ZapCompany
                 </h2>
                 <div className="space-y-4 text-lg text-zinc-600">
                   <p>
-                    우씨는 2020년 설립 이래 고객 중심의 서비스와 투명한 거래를 통해
-                    500개 이상의 기업과 신뢰 관계를 구축해왔습니다.
+                    잽컴퍼니는 2025년 설립 이래 고객 중심의 서비스와 투명한 거래를 통해
+                    신뢰 관계를 구축해가고 있습니다.
                   </p>
                   <p>
                     다양한 산업 분야의 도소매 경험을 바탕으로 최적의 솔루션을 제공하며,
@@ -247,31 +247,31 @@ export default function AboutPage() {
             <div className="bg-white rounded-lg border border-zinc-200 p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-lg font-semibold text-zinc-900 mb-2">회사명</h3>
-                  <p className="text-zinc-600 mb-6">주식회사 우씨 (WOOCI Co., Ltd.)</p>
+                  <h3 className="text-lg font-semibold text-zinc-900 mb-2">상호명</h3>
+                  <p className="text-zinc-600 mb-6">잽컴퍼니 (ZapCompany)</p>
 
-                  <h3 className="text-lg font-semibold text-zinc-900 mb-2">대표이사</h3>
-                  <p className="text-zinc-600 mb-6">홍길동</p>
+                  <h3 className="text-lg font-semibold text-zinc-900 mb-2">성명</h3>
+                  <p className="text-zinc-600 mb-6">안재빈</p>
 
-                  <h3 className="text-lg font-semibold text-zinc-900 mb-2">설립일</h3>
-                  <p className="text-zinc-600 mb-6">2020년 1월</p>
+                  <h3 className="text-lg font-semibold text-zinc-900 mb-2">개업일자</h3>
+                  <p className="text-zinc-600 mb-6">2025년 10월 28일</p>
 
                   <h3 className="text-lg font-semibold text-zinc-900 mb-2">사업자등록번호</h3>
                   <p className="text-zinc-600">000-00-00000</p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-zinc-900 mb-2">주소</h3>
+                  <h3 className="text-lg font-semibold text-zinc-900 mb-2">사업장 소재지</h3>
                   <p className="text-zinc-600 mb-6">
-                    서울특별시 강남구 테헤란로 123<br />
-                    우씨빌딩 5층
+                    광주광역시 동구 지산로57번길 5-4,<br />
+                    201호(지산동)
                   </p>
 
                   <h3 className="text-lg font-semibold text-zinc-900 mb-2">대표전화</h3>
                   <p className="text-zinc-600 mb-6">02-1234-5678</p>
 
                   <h3 className="text-lg font-semibold text-zinc-900 mb-2">이메일</h3>
-                  <p className="text-zinc-600 mb-6">contact@wooci.com</p>
+                  <p className="text-zinc-600 mb-6">whyda122416@gmail.com</p>
 
                   <h3 className="text-lg font-semibold text-zinc-900 mb-2">업무시간</h3>
                   <p className="text-zinc-600">
@@ -291,7 +291,7 @@ export default function AboutPage() {
               함께 성장할 파트너를 찾고 있습니다
             </h2>
             <p className="text-lg text-zinc-300 mb-8 max-w-2xl mx-auto">
-              우씨와 함께 비즈니스를 성장시켜보세요.
+              잽컴퍼니와 함께 비즈니스를 성장시켜보세요.
             </p>
             <Link href="/estimate">
               <Button size="lg" className="bg-white text-zinc-900 hover:bg-zinc-100">

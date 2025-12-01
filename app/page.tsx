@@ -170,11 +170,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-zinc-900 mb-2">500+</div>
+              <div className="text-4xl font-bold text-zinc-900 mb-2">100+</div>
               <div className="text-zinc-600">거래 기업</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-zinc-900 mb-2">10,000+</div>
+              <div className="text-4xl font-bold text-zinc-900 mb-2">1,000+</div>
               <div className="text-zinc-600">취급 상품</div>
             </div>
             <div>

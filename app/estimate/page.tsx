@@ -20,34 +20,58 @@ export default function EstimatePage() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: 실제 서버로 데이터 전송
-    console.log('견적 요청:', formData);
-    setSubmitted(true);
+    setIsLoading(true);
+    setError('');
 
-    // 3초 후 폼 초기화
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        companyName: '',
-        contactName: '',
-        email: '',
-        phone: '',
-        category: '',
-        productName: '',
-        quantity: '',
-        budget: '',
-        deliveryDate: '',
-        message: ''
+    try {
+      const response = await fetch('/api/estimate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || '견적 문의 전송에 실패했습니다.');
+      }
+
+      setSubmitted(true);
+
+      // 3초 후 폼 초기화
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          companyName: '',
+          contactName: '',
+          email: '',
+          phone: '',
+          category: '',
+          productName: '',
+          quantity: '',
+          budget: '',
+          deliveryDate: '',
+          message: ''
+        });
+      }, 3000);
+
+    } catch (err) {
+      setError(err instanceof Error ? err.message : '알 수 없는 오류가 발생했습니다.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -107,7 +131,7 @@ export default function EstimatePage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-2.5 border border-zinc-300 rounded-md focus:ring-2 focus:ring-zinc-900 focus:border-transparent outline-none transition-colors"
-                          placeholder="(주)우씨컴퍼니"
+                          placeholder="잽컴퍼니"
                         />
                       </div>
                       <div>
@@ -137,7 +161,7 @@ export default function EstimatePage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-2.5 border border-zinc-300 rounded-md focus:ring-2 focus:ring-zinc-900 focus:border-transparent outline-none transition-colors"
-                          placeholder="contact@example.com"
+                          placeholder="whyda122416@gmail.com"
                         />
                       </div>
                       <div>
@@ -152,7 +176,7 @@ export default function EstimatePage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-2.5 border border-zinc-300 rounded-md focus:ring-2 focus:ring-zinc-900 focus:border-transparent outline-none transition-colors"
-                          placeholder="010-1234-5678"
+                          placeholder="010-6391-7189"
                         />
                       </div>
                     </div>
@@ -270,10 +294,37 @@ export default function EstimatePage() {
                     </div>
                   </div>
 
+                  {/* 에러 메시지 */}
+                  {error && (
+                    <div className="bg-red-50 border border-red-200 rounded-md p-4">
+                      <div className="flex items-center">
+                        <svg className="w-5 h-5 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <p className="text-sm text-red-700">{error}</p>
+                      </div>
+                    </div>
+                  )}
+
                   {/* 제출 버튼 */}
                   <div className="pt-4">
-                    <Button type="submit" size="lg" className="w-full">
-                      견적 요청하기
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full"
+                      disabled={isLoading}
+                    >
+                      {isLoading ? (
+                        <span className="flex items-center justify-center">
+                          <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                          전송 중...
+                        </span>
+                      ) : (
+                        '견적 요청하기'
+                      )}
                     </Button>
                     <p className="text-sm text-zinc-500 text-center mt-4">
                       * 표시는 필수 입력 항목입니다

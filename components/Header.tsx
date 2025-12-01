@@ -13,7 +13,7 @@ export default function Header() {
           {/* 로고 */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-zinc-900">
-              WOOCI
+              ZapCompany
             </Link>
           </div>
 
