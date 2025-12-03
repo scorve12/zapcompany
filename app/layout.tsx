@@ -10,8 +10,8 @@ const notoSerifKR = Noto_Serif_KR({
 });
 
 export const metadata: Metadata = {
-  title: "ZapCompany - 믿을 수 있는 도소매 파트너",
-  description: "다양한 상품을 경쟁력 있는 가격으로 제공하는 도소매 전문 기업",
+  title: "ZapCompany - 믿을 수 있는 구매대행 서비스 파트너",
+  description: "다양한 상품을 경쟁력 있는 가격으로 제공하는 구매대행 서비스 전문 기업",
 };
 
 export default function RootLayout({

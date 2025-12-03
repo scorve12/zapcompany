@@ -33,7 +33,7 @@ export default function TermsPage() {
                 <section>
                   <h2 className="text-2xl font-bold text-zinc-900 mb-4">제1조 (목적)</h2>
                   <p className="text-zinc-600 leading-relaxed">
-                    본 약관은 잽컴퍼니(이하 "회사"라 함)가 제공하는 도소매 서비스(이하 "서비스"라 함)의 이용과 관련하여
+                    본 약관은 잽컴퍼니(이하 "회사"라 함)가 제공하는 구매대행 서비스 서비스(이하 "서비스"라 함)의 이용과 관련하여
                     회사와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
                   </p>
                 </section>
@@ -44,7 +44,7 @@ export default function TermsPage() {
                     본 약관에서 사용하는 용어의 정의는 다음과 같습니다:
                   </p>
                   <ol className="list-decimal list-inside space-y-2 text-zinc-600">
-                    <li>"서비스"라 함은 회사가 제공하는 모든 도소매 관련 서비스를 의미합니다.</li>
+                    <li>"서비스"라 함은 회사가 제공하는 모든 구매대행 서비스 관련 서비스를 의미합니다.</li>
                     <li>"이용자"라 함은 본 약관에 따라 회사가 제공하는 서비스를 받는 자를 말합니다.</li>
                     <li>"견적"이라 함은 이용자의 요청에 따라 회사가 제공하는 상품 가격 및 조건 제안을 의미합니다.</li>
                   </ol>
@@ -64,7 +64,7 @@ export default function TermsPage() {
                   <ol className="list-decimal list-inside space-y-2 text-zinc-600">
                     <li>회사는 다음과 같은 서비스를 제공합니다:
                       <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
-                        <li>도소매 상품 견적 제공</li>
+                        <li>구매대행 서비스 상품 견적 제공</li>
                         <li>상품 주문 및 배송 서비스</li>
                         <li>기타 회사가 정하는 서비스</li>
                       </ul>

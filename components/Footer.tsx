@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold text-white mb-4">ZapCompany</h3>
             <p className="text-sm text-zinc-400 mb-4">
-              믿을 수 있는 도소매 파트너
+              믿을 수 있는 구매대행 서비스 파트너
             </p>
             <div className="space-y-2 text-sm">
               <p>대표: 안재빈</p>

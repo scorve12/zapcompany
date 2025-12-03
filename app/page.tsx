@@ -28,7 +28,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">
               믿을 수 있는
               <br />
-              도소매 파트너
+              구매대행 서비스 파트너
             </h1>
             <p className="text-lg md:text-xl text-zinc-100 mb-8 drop-shadow-md">
               다양한 상품을 경쟁력 있는 가격으로 제공합니다.

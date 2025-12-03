@@ -17,7 +17,7 @@ export default function AboutPage() {
                 회사 소개
               </h1>
               <p className="text-lg text-zinc-300">
-                신뢰와 품질을 최우선으로 생각하는 도소매 전문 기업입니다.
+                신뢰와 품질을 최우선으로 생각하는 구매대행 서비스 전문 기업입니다.
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function AboutPage() {
                     신뢰 관계를 구축해가고 있습니다.
                   </p>
                   <p>
-                    다양한 산업 분야의 도소매 경험을 바탕으로 최적의 솔루션을 제공하며,
+                    다양한 산업 분야의 구매대행 서비스 경험을 바탕으로 최적의 솔루션을 제공하며,
                     고객의 성공이 곧 우리의 성공이라는 믿음으로 함께 성장하고 있습니다.
                   </p>
                   <p>
@@ -121,7 +121,7 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border border-zinc-200 rounded-lg p-8 hover:border-zinc-400 transition-colors">
-                <h3 className="text-2xl font-bold text-zinc-900 mb-4">B2B 도매</h3>
+                <h3 className="text-2xl font-bold text-zinc-900 mb-4">B2B 구매대행 서비스</h3>
                 <p className="text-zinc-600 mb-4">
                   기업 고객을 대상으로 대량 구매를 지원하며, 장기 거래 시 특별 할인과
                   맞춤형 서비스를 제공합니다.
