@@ -97,13 +97,13 @@ export default function ContactPage() {
                 <div className="mt-12 p-6 bg-zinc-50 rounded-lg border border-zinc-200">
                   <h3 className="font-semibold text-zinc-900 mb-4">빠른 문의</h3>
                   <p className="text-zinc-600 mb-4 text-sm">
-                    상품 견적이 필요하신가요? 견적 문의 페이지에서 빠르게 요청하실 수 있습니다.
+                    상품 견적이 필요하신가요? 구매대행 문의 페이지에서 빠르게 요청하실 수 있습니다.
                   </p>
                   <Link
                     href="/estimate"
                     className="inline-flex items-center justify-center w-full px-4 py-2.5 text-sm font-semibold text-white bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors"
                   >
-                    견적 문의하기
+                    구매대행 문의하기
                   </Link>
                 </div>
               </div>

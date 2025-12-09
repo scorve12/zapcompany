@@ -35,7 +35,7 @@ export default function Header() {
               href="/estimate"
               className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors"
             >
-              견적 문의
+              구매대행 문의
             </Link>
           </div>
 
@@ -80,7 +80,7 @@ export default function Header() {
               className="block px-3 py-2 text-base font-semibold text-white bg-zinc-900 hover:bg-zinc-800 rounded-md text-center mt-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              견적 문의
+              구매대행 문의
             </Link>
           </div>
         )}

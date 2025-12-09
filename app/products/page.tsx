@@ -130,7 +130,7 @@ export default function ProductsPage() {
                       </div>
                       <Link href="/estimate">
                         <Button className="w-full" variant="secondary">
-                          견적 문의
+                          구매대행 문의
                         </Button>
                       </Link>
                     </div>
@@ -158,11 +158,11 @@ export default function ProductsPage() {
               원하시는 상품을 찾지 못하셨나요?
             </h2>
             <p className="text-lg text-zinc-300 mb-8">
-              견적 문의를 통해 필요하신 상품을 알려주세요.
+              구매대행 문의를 통해 필요하신 상품을 알려주세요.
             </p>
             <Link href="/estimate">
               <Button size="lg" className="bg-white text-zinc-900 hover:bg-zinc-100">
-                맞춤 견적 문의하기
+                맞춤 구매대행 문의하기
               </Button>
             </Link>
           </div>

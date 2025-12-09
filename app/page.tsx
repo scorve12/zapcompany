@@ -33,12 +33,12 @@ export default function Home() {
             <p className="text-lg md:text-xl text-zinc-100 mb-8 drop-shadow-md">
               다양한 상품을 경쟁력 있는 가격으로 제공합니다.
               <br />
-              빠른 견적 문의로 시작하세요.
+              빠른 구매대행 문의로 시작하세요.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/estimate">
                 <Button size="lg" className="w-full sm:w-auto">
-                  견적 문의하기
+                  구매대행 문의하기
                 </Button>
               </Link>
               <Link href="/products">
@@ -159,7 +159,7 @@ export default function Home() {
           </p>
           <Link href="/estimate">
             <Button size="lg" className="bg-white text-zinc-900 hover:bg-zinc-100">
-              무료 견적 문의
+              무료 구매대행 문의
             </Button>
           </Link>
         </div>

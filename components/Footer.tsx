@@ -31,7 +31,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/estimate" className="hover:text-white transition-colors">
-                  견적 문의
+                  구매대행 문의
                 </Link>
               </li>
               <li>

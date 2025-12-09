@@ -45,7 +45,7 @@ export default function EstimatePage() {
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result.error || '견적 문의 전송에 실패했습니다.');
+        throw new Error(result.error || '구매대행 문의 전송에 실패했습니다.');
       }
 
       setSubmitted(true);
@@ -84,7 +84,7 @@ export default function EstimatePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                견적 문의
+                구매대행 문의
               </h1>
               <p className="text-lg text-zinc-300">
                 필요하신 상품 정보를 입력해주시면 24시간 이내에 최적의 견적을 제공해드립니다.

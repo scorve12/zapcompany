@@ -29,10 +29,10 @@ export async function POST(request: Request) {
 
     // 이메일 발송
     const { data, error } = await resend.emails.send({
-      from: 'ZapCompany 견적문의 <noreply@produck.life>', // 인증된 도메인 사용
+      from: 'ZapCompany 구매대행 문의 <noreply@produck.life>', // 인증된 도메인 사용
       to: [process.env.ADMIN_EMAIL || 'scorve5322@gmail.com'], // 관리자 이메일
       replyTo: email, // 고객 이메일로 답장 가능
-      subject: `[견적문의] ${companyName} - ${productName}`,
+      subject: `[구매대행 문의] ${companyName} - ${productName}`,
       html: `
         <!DOCTYPE html>
         <html>
@@ -95,7 +95,7 @@ export async function POST(request: Request) {
           </head>
           <body>
             <div class="header">
-              <h1 style="margin: 0;">새로운 견적 문의</h1>
+              <h1 style="margin: 0;">새로운 구매대행 문의</h1>
             </div>
 
             <div class="content">
@@ -156,7 +156,7 @@ export async function POST(request: Request) {
             </div>
 
             <div class="footer">
-              <p>이 메일은 ZapCompany 웹사이트의 견적 문의 시스템에서 자동으로 발송되었습니다.</p>
+              <p>이 메일은 ZapCompany 웹사이트의 구매대행 문의 시스템에서 자동으로 발송되었습니다.</p>
               <p>답변은 위 고객 이메일(${email})로 회신해주세요.</p>
             </div>
           </body>
@@ -175,14 +175,14 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         success: true,
-        message: '견적 문의가 성공적으로 접수되었습니다.',
+        message: '구매대행 문의가 성공적으로 접수되었습니다.',
         data
       },
       { status: 200 }
     );
 
   } catch (error) {
-    console.error('견적 문의 처리 중 오류:', error);
+    console.error('구매대행 문의 처리 중 오류:', error);
     return NextResponse.json(
       { error: '서버 오류가 발생했습니다.' },
       { status: 500 }

@@ -37,7 +37,7 @@ export default function PrivacyPage() {
                     이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-zinc-600">
-                    <li>견적 문의 응대 및 상담</li>
+                    <li>구매대행 문의 응대 및 상담</li>
                     <li>상품 주문 및 배송</li>
                     <li>서비스 제공에 관한 계약 이행 및 요금 정산</li>
                     <li>고객 문의 및 불만 처리</li>
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
                     회사는 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-zinc-600">
-                    <li>견적 문의 정보: 문의 처리 완료 후 3년</li>
+                    <li>구매대행 문의 정보: 문의 처리 완료 후 3년</li>
                     <li>계약 및 청약철회 기록: 5년 (전자상거래법)</li>
                     <li>대금결제 및 재화 공급 기록: 5년 (전자상거래법)</li>
                     <li>소비자 불만 또는 분쟁 처리 기록: 3년 (전자상거래법)</li>
