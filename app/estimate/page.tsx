@@ -176,7 +176,7 @@ export default function EstimatePage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-2.5 border border-zinc-300 rounded-md focus:ring-2 focus:ring-zinc-900 focus:border-transparent outline-none transition-colors"
-                          placeholder="010-7437-1240"
+                          placeholder="010-0000-0000"
                         />
                       </div>
                     </div>

@@ -159,7 +159,7 @@ export default function PrivacyPage() {
                     <ul className="space-y-1 text-zinc-600">
                       <li>성명: 안재빈</li>
                       <li>이메일: whyda122416@gmail.com</li>
-                      <li>전화번호: 02-1234-5678</li>
+                      <li>전화번호: 010-7437-1240</li>
                     </ul>
                   </div>
                 </section>

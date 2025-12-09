@@ -59,7 +59,7 @@ export default function ContactPage() {
                     </div>
                     <div className="ml-4">
                       <h3 className="font-semibold text-zinc-900 mb-1">전화</h3>
-                      <p className="text-zinc-600">02-1234-5678</p>
+                      <p className="text-zinc-600">010-7437-1240</p>
                     </div>
                   </div>
 

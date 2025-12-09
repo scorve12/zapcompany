@@ -268,7 +268,7 @@ export default function AboutPage() {
                   </p>
 
                   <h3 className="text-lg font-semibold text-zinc-900 mb-2">대표전화</h3>
-                  <p className="text-zinc-600 mb-6">02-1234-5678</p>
+                  <p className="text-zinc-600 mb-6">010-7437-1240</p>
 
                   <h3 className="text-lg font-semibold text-zinc-900 mb-2">이메일</h3>
                   <p className="text-zinc-600 mb-6">whyda122416@gmail.com</p>
